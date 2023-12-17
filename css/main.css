@@ -11,9 +11,13 @@ body {
 }
 
 h1 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2.5rem;
     padding: 2rem 0;
+}
+
+.h1-light {
+    font-weight: 400;
 }
 
 .h1-case {
@@ -217,13 +221,10 @@ figure img {
     margin-top: 3rem;
 }
 
-.section.main {
-    /* margin-top: 5rem;
-    margin-bottom: 5rem; */
-
-    /* padding-top: 5rem;
-    padding-bottom: 5rem; */
-}
+/* .section.main {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+} */
 
 .headshot {
     padding-top: 1.5rem;
@@ -402,4 +403,17 @@ p.author {
 video {
     width: 100%;
     height: auto;
+}
+
+.yt-vid {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.yt-vid iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
 }
