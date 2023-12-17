@@ -121,11 +121,13 @@ a:focus {
 }
 
 hr {
-    height: 0.5px;
+    height: 0.25px;
     color: #368069;
     background-color: #368069;
     margin-bottom: 4rem;
     box-shadow: 0 20px 20px -20px #333;
+    /* margin-left: 7rem;
+    margin-right: 7rem; */
 }
 
 
@@ -197,10 +199,6 @@ figure img {
     line-height: 1.5rem;
 }
 
-.section.bio {
-    margin-top: 3rem;
-}
-
 .intro-item {
     padding-right: 3rem;
 }
@@ -215,6 +213,18 @@ figure img {
     margin-bottom: 0;
 }
 
+.section.bio {
+    margin-top: 3rem;
+}
+
+.section.main {
+    /* margin-top: 5rem;
+    margin-bottom: 5rem; */
+
+    /* padding-top: 5rem;
+    padding-bottom: 5rem; */
+}
+
 .headshot {
     padding-top: 1.5rem;
 }
@@ -224,7 +234,7 @@ figure img {
     margin-top: 2rem;
 }
 
-.case-intro h3 {
+.case-body h3 {
     margin-top: 6rem;
 }
 
@@ -235,6 +245,10 @@ figure img {
 .case-body .sub-p {
     margin-top: 0;
     padding-bottom: 1rem;
+}
+
+.grid.case-intro .h2-sm {
+    padding-top: 2rem;
 }
 
 p.sub-p-img {

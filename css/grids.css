@@ -46,7 +46,7 @@
         padding: 0rem;
     }
 
-    .grid.case-intro.one {
+    .grid.case-body.one {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-auto-flow: row;
@@ -64,7 +64,7 @@
         margin-top: 5rem;
     }
 
-    .case-intro h3 {
+    .case-body h3 {
         margin-top: 3rem;
     }
 
@@ -114,6 +114,20 @@
     .final-design a {
         font-size: 0.85rem;
     }
+
+    .grid.case-intro.one {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    hr {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
 }
 
 @media (min-width: 26.5625rem) {
@@ -149,6 +163,11 @@
         grid-auto-flow: row;
         gap: 5rem;
         margin-top: 5rem;
+    }
+
+    hr {
+        margin-left: 7rem;
+        margin-right: 7rem;
     }
 
     .pop-up {
@@ -189,7 +208,8 @@
         padding-bottom: 5rem;
     }
 
-    .final-design, .prototype {
+    .final-design,
+    .prototype {
         margin-top: 6.5rem;
     }
 }
@@ -212,7 +232,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         grid-auto-flow: row;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .grid.bio.two {
@@ -230,18 +250,32 @@
         margin: 4rem 3rem;
     }
 
-    .grid.case-intro.two {
-        grid-template-columns: 1.5fr 3fr;
+    .grid.case-body.two {
+        grid-template-columns: 1fr 4fr;
         grid-template-rows: auto;
         grid-auto-flow: row;
         gap: 2.5rem;
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+    }
+
+    .section.case {
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+    }
+
+    .grid.case-intro.two {
+        grid-template-columns: 2.5fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 3rem;
     }
 
     p.p-enlarge {
         padding-bottom: 7.5rem;
     }
 
-    .case-intro h3 {
+    .case-body h3 {
         margin-top: 6rem;
     }
 }
@@ -255,7 +289,8 @@
         margin: 4rem 7.5rem;
     }
 
-    .final-design, .prototype {
+    .final-design,
+    .prototype {
         margin-top: 5rem;
     }
 }
