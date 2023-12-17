@@ -7,7 +7,7 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #FFF;
+    background-color: #FFFAFA;
 }
 
 h1 {
@@ -155,6 +155,9 @@ figure p {
     margin-top: 0.5rem;
 }
 
+figure img {
+    border-radius: 8px;
+}
 
 /* Home Page */
 /* .green-bg {
