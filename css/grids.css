@@ -41,6 +41,9 @@
         grid-template-rows: auto;
         grid-auto-flow: row;
     }
+    .section.bio {
+        margin-top: 2rem;
+    }
 
     .biography {
         padding: 0rem;
@@ -242,6 +245,10 @@
         gap: 1rem;
     }
 
+    .section.bio {
+        margin-top: 5rem;
+    }
+
     .biography {
         padding: 0 3rem;
     }
@@ -311,3 +318,4 @@
         gap: 2rem;
     }
 }
+

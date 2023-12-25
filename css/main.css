@@ -109,6 +109,10 @@ em {
     text-decoration: none;
 }
 
+.navbar .active {
+    color: #368069;
+}
+
 a {
     color: #368069;
     text-decoration: none;
@@ -176,6 +180,7 @@ figure img {
 
 /* Footer */
 .footer {
+    margin-top: 5rem;
     margin-bottom: 2rem;
 }
 
@@ -199,9 +204,18 @@ figure img {
 }
 
 .biography p {
-    margin: 0.75rem 0;
+    margin: 1.25rem 0;
     line-height: 1.5rem;
 }
+
+/* .biography a {
+    display: inline-block;
+    padding-right: 5rem;
+} */
+
+.biography a p {
+    margin: 0rem;
+} 
 
 .intro-item {
     padding-right: 3rem;
@@ -218,7 +232,7 @@ figure img {
 }
 
 .section.bio {
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 /* .section.main {
