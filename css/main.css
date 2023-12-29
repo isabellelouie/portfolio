@@ -12,7 +12,7 @@ body {
 
 h1 {
     font-weight: 450;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     padding: 2rem 0;
     margin-bottom: 0.5rem;
 }
@@ -40,6 +40,18 @@ h2 {
     margin-bottom: 2.5rem;
 }
 
+h2.h2-xl {
+    font-weight: 450;
+    font-size: 2.25rem;
+    /* margin-top: 0.5rem;
+    margin-bottom: 3.25rem; */
+    margin-bottom: 1rem;
+}
+
+h2.h2-lg {
+    margin-top: 0;
+}
+
 h2.h2-md {
     font-weight: 500;
     font-size: 0.95rem;
@@ -59,6 +71,7 @@ h2.h2-sm {
 h3 {
     font-weight: 500;
     font-size: 1.25rem;
+
 }
 
 h4 {
@@ -83,7 +96,7 @@ em {
     padding: 2.5rem;
     margin-bottom: 2rem;
     z-index: 10;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
 }
 
 .navbar .logo {
@@ -105,7 +118,7 @@ em {
 }
 
 .navbar li {
-    padding-left: 1.75rem;
+    padding-left: 1.25rem;
     float: left;
 }
 
@@ -264,7 +277,6 @@ figure img {
 
 .bg2 {
     background-color: #eeeeee;
-    /* border-radius: 25px; */
     padding: 2.5rem 7.5rem;
 }
 
@@ -441,7 +453,6 @@ p.author {
 video {
     width: 100%;
     height: auto;
-    margin-bottom: 3rem;
 }
 
 .yt-vid {
@@ -457,3 +468,20 @@ video {
     position: absolute;
 }
 
+.none {
+    margin-bottom: 3rem;
+}
+
+/* .skill {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.4rem 0.85rem;
+
+    border-radius: 75px;
+    border: solid 1px;
+    border-color: #21212150;
+} */

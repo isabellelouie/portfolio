@@ -70,7 +70,7 @@
     }
 
     .case-body h3 {
-        margin-top: 0rem;
+        margin-top: 0.15rem;
     }
 
     .pop-up {
@@ -207,11 +207,23 @@
     .prototype {
         margin-top: 6.5rem;
     }
+
+    /* h2.h2-lg {
+        font-weight: 450;
+        font-size: 2.25rem;
+        margin-top: 5rem;
+        margin-bottom: 3.25rem;
+    } */
+
+    .bg2 {
+        margin: 5rem 0;
+        padding: 2.5rem;
+    }
 }
 
 @media (min-width: 48rem) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
         padding: 0;
     }
 
@@ -290,12 +302,16 @@
         margin-left: 7rem;
         margin-right: 7rem;
     }
+
+    .bg2 {
+        padding: 2.5rem 3rem;
+    }
 }
 
 @media (min-width: 65rem) {
-    h1 {
+    /* h1 {
         max-width: 75%;
-    }
+    } */
 
     .section {
         margin: 4rem 7.5rem;
@@ -304,6 +320,10 @@
     .final-design,
     .prototype {
         margin-top: 5rem;
+    }
+
+    .bg2 {
+        padding: 2.5rem 7.5rem;
     }
 }
 
