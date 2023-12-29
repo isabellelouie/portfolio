@@ -5,6 +5,8 @@
 /* Font Styles */
 body {
     font-family: 'DM Sans', sans-serif;
+    /* font-family: "sofia-pro", sans-serif; */
+    /* font-family: "tenon", sans-serif; */
     font-weight: 400;
     font-style: normal;
     background-color: #FFFAFA;
@@ -26,11 +28,15 @@ h1 {
 }
 
 h2 {
-    font-weight: 425;
+    font-weight: 400;
     font-size: 1.75rem;
-    min-width: 10rem;
+    min-width: 12rem;
     /* margin-top: 0rem; */
     /* color: #368069; */
+}
+
+.heading {
+    color: #368069;
 }
 
 .two h2 {
@@ -72,7 +78,7 @@ h2.h2-sm {
 h3 {
     font-weight: 500;
     font-size: 1.25rem;
-
+    padding-bottom: 1rem;
 }
 
 h4 {
@@ -278,7 +284,6 @@ figure img {
 
 .bg2 {
     background-color: #eeeeee;
-    padding: 2.5rem 7.5rem;
 }
 
 .headshot {
