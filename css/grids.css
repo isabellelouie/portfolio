@@ -19,7 +19,6 @@
     h2.h2-sm {
         font-weight: 500;
         font-size: 0.85rem;
-        /* margin-top: 0.75rem; */
         margin-top: 0;
         color: #959595
     }
@@ -105,9 +104,9 @@
         gap: 2rem;
     }
 
-    p.p-cap {
+    /* p.p-cap {
         padding-bottom: 2rem;
-    }
+    } */
 
     .p-cap.comp {
         padding-bottom: 0rem;
@@ -173,6 +172,10 @@
         grid-auto-flow: row;
         gap: 5rem;
         margin-top: 5rem;
+    }
+
+    h2.h2-sm {
+        margin-top: 0.75rem;
     }
 
     .pop-up {
@@ -350,5 +353,9 @@
         grid-template-rows: auto;
         grid-auto-flow: row;
         gap: 2rem;
+    }
+
+    .grey {
+        padding: 2.5rem 15rem;
     }
 }

@@ -77,6 +77,10 @@ h2.h2-sm {
     color: #959595
 }
 
+.h2-sm.in {
+    margin-top: 3rem;
+}
+
 h3 {
     font-weight: 500;
     font-size: 1.25rem;
@@ -87,6 +91,8 @@ h3 {
 .case-name {
     padding-bottom: 0;
 }
+
+
 
 .insights {
     margin-bottom: 0;
@@ -101,6 +107,11 @@ h4 {
 p {
     line-height: 1.5rem;
     /* padding-bottom: 1rem; */
+}
+
+.no-pad {
+    padding: 0;
+    margin: 0;
 }
 
 em {
@@ -158,7 +169,6 @@ em {
 
 .navbar a:hover,
 .navbar a:focus {
-    /* color: #368069; */
     text-decoration: none;
     background-color: #21212115;
 }
@@ -422,6 +432,8 @@ a.btn {
     margin-bottom: 3rem;
 }
 
+
+
 .highlight {
     background: #FFFAFA;
     padding: 2.4rem 2.4rem 0.4rem;
@@ -519,3 +531,26 @@ video {
     border: solid 1px;
     border-color: #21212150;
 } */
+
+.link-btn p {
+    font-size: 0.85rem;
+}
+
+.link-btn a {
+    color: #202020;
+    text-decoration: none;
+
+    display: inline-flex;
+    padding: 0.25rem 0.85rem;
+
+    border-radius: 75px;
+    border: solid 1px;
+    border-color: #21212150;
+    transition: 0.2s;
+}
+
+.link-btn a:hover,
+.link-btn a:focus {
+    text-decoration: none;
+    background-color: #21212115;
+}
