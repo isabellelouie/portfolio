@@ -79,6 +79,16 @@ h3 {
     font-weight: 500;
     font-size: 1.25rem;
     padding-bottom: 1rem;
+    line-height: 1.75rem;
+}
+
+.case-name {
+    padding-bottom: 0;
+}
+
+.insights {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
 }
 
 h4 {
@@ -407,6 +417,17 @@ a.btn {
     /* text-align: center; */
     font-size: 0.75rem;
     margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.highlight {
+    background: #FFFAFA;
+    padding: 2.4rem 2.4rem 0.4rem;
+    margin-bottom: 2rem;
+
+    border-radius: 8px;
+    border: solid 1px;
+    border-color: #21212150;
 }
 
 .quote {
