@@ -5,17 +5,13 @@
 /* Font Styles */
 body {
     font-family: 'DM Sans', sans-serif;
-    /* font-family: 'Public Sans', sans-serif; */
-    /* font-family: 'Libre Franklin', sans-serif; */
-    /* font-family: "sofia-pro", sans-serif; */
-    /* font-family: "tenon", sans-serif; */
     font-weight: 400;
     font-style: normal;
     background-color: #FFFAFA;
 }
 
 h1 {
-    font-weight: 450;
+    font-weight: 425;
     font-size: 2.25rem;
     padding: 2rem 0;
     margin-bottom: 0.5rem;
@@ -35,6 +31,12 @@ h2 {
     min-width: 13rem;
     /* margin-top: 0rem; */
     /* color: #368069; */
+}
+
+.home h2 {
+    padding-top: 1rem;
+    margin: 0;
+    font-weight: 385;
 }
 
 .heading {
@@ -81,6 +83,10 @@ h2.h2-sm {
     margin-top: 3rem;
 }
 
+.h2-sm.sub-in {
+    margin-bottom: 0;
+}
+
 h3 {
     font-weight: 500;
     font-size: 1.25rem;
@@ -88,11 +94,18 @@ h3 {
     line-height: 1.75rem;
 }
 
+h3.p-in {
+    /* margin-top: 3rem; */
+    margin: 0;
+}
+
 .case-name {
     padding-bottom: 0;
 }
 
-
+.add-pad {
+    margin-bottom: 3rem;
+}
 
 .insights {
     margin-bottom: 0;
@@ -114,8 +127,13 @@ p {
     margin: 0;
 }
 
-em {
+h1 em {
     color: #368069;
+    font-style: normal;
+}
+
+h2 em {
+    color: #4873a0;
     font-style: normal;
 }
 
@@ -194,10 +212,10 @@ a:focus {
 
 hr {
     height: 0.25px;
-    color: #368069;
-    background-color: #368069;
-    margin: 6rem 0 3rem;
-    box-shadow: 0 20px 20px -20px #333;
+    color: #202020;
+    /* background-color: #202020; */
+    margin: 3rem 0 3rem;
+    /* box-shadow: 0 20px 20px -20px #333; */
     /* margin-left: 7rem;
     margin-right: 7rem; */
 }
@@ -209,6 +227,7 @@ img {
     height: auto;
     max-width: 100%;
     filter: drop-shadow(0 0 0.2rem #d2d2d2);
+    border-radius: 8px;
 }
 
 a:hover img,
@@ -232,14 +251,6 @@ figure p {
 figure img {
     border-radius: 8px;
 }
-
-/* Home Page */
-/* .green-bg {
-    background-color: #368069;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-} */
 
 
 /* Footer */
@@ -339,30 +350,10 @@ p.sub-p-img {
     padding-bottom: 0;
 }
 
-a.btn {
-    background: #368069;
-    color: #FFF;
-    border: none;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    transition: background-color 0.35s;
-    /* border-radius: 5px; */
-    font-size: 1rem;
-    cursor: pointer;
-    /* height: 2.6rem; */
-    filter: drop-shadow(0 0 0.2rem #d2d2d2);
-}
-
-.btn:hover,
-.btn:focus {
-    background-color: #276553;
-    text-decoration: none;
-}
-
 
 /* Reference: https://www.w3schools.com/howto/howto_css_modal_images.asp */
 /* Case study images (click to enlarge) */
-.static-img {
+/* .static-img {
     border-width: 0.25px;
     border-style: solid;
     border-color: #368069;
@@ -376,7 +367,7 @@ a.btn {
 .static-img:hover,
 .static-img:focus {
     filter: brightness(0.8);
-}
+} */
 
 .modal {
     display: none;
@@ -442,6 +433,7 @@ a.btn {
     border-radius: 8px;
     border: solid 1px;
     border-color: #21212150;
+    filter: drop-shadow(0 0 0.2rem #d2d2d2);
 }
 
 .quote {
@@ -499,6 +491,7 @@ p.author {
 video {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 .yt-vid {
@@ -512,6 +505,7 @@ video {
     left: 0;
     top: 0;
     position: absolute;
+    border-radius: 8px;
 }
 
 .none {
@@ -553,4 +547,139 @@ video {
 .link-btn a:focus {
     text-decoration: none;
     background-color: #21212115;
+}
+
+
+
+
+
+/* button a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1rem;
+}
+
+button a:hover,
+button a:focus {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.pushable {
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: hsl(0deg 0% 0% / 0.25);
+    transform: translateY(2px);
+}
+
+.edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: #285f4d;
+}
+
+.front {
+    display: block;
+    position: relative;
+    padding: 0.4rem 0.85rem;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    color: white;
+    background: #3e856f;
+    transform: translateY(-4px);
+}
+
+.pushable:hover .front {
+    transform: translateY(-6px);
+}
+
+.pushable:hover .shadow {
+    transform: translateY(3px);
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+}
+
+.pushable:active .shadow {
+    transform: translateY(1px);
+}
+
+.pushable:focus:not(:focus-visible) {
+    outline: none;
+} */
+
+
+
+a.btn {
+    background: #368069;
+    color: #FFF;
+    border: none;
+    padding: 0.4rem 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.35s;
+    border-radius: 75px;
+    font-size: 1rem;
+    cursor: pointer;
+    /* height: 2.6rem; */
+    filter: drop-shadow(0 0 0.2rem #d2d2d2);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #276553;
+    text-decoration: none;
+}
+
+
+.front {
+
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: #368069;
+    color: white;
+    transform: translateY(-4px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.pushable {
+    background: #285f4d;
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.pushable:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.pushable:hover .front {
+    transform: translateY(-6px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
 }

@@ -300,10 +300,10 @@
         /* margin-top: 6rem; */
     }
 
-    hr {
+    /* hr {
         margin-left: 7rem;
         margin-right: 7rem;
-    }
+    } */
 
     .grey {
         padding: 2.5rem 3rem;
@@ -311,9 +311,11 @@
 }
 
 @media (min-width: 65rem) {
-    /* h1 {
-        max-width: 75%;
-    } */
+
+    .home h1,
+    .home h2 {
+        max-width: 100%;
+    }
 
     .section {
         margin: 4rem 7.5rem;

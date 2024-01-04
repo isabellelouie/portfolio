@@ -120,11 +120,15 @@
                 <h2 class="h2-lg">A seamless online ordering experience, backed by user research.</h2>
             </div>
 
-            <div>
-                <video aria-describedby="new-web" width="320" height="240" controls>
+            <div class="yt-vid">
+                <!-- <video aria-describedby="new-web" width="320" height="240" autoplay="autoplay" loop="loop">
                     <source src="vid/prototype_walkthrough.mp4" type="video/mp4">
                     <p id="new-web">Walkthrough of the redesigned Bonus Bakery's website</p>
-                </video>
+                </video> -->
+
+                <iframe width="1920" height="1080" src="https://youtube.com/embed/9DRpqXpFho0?mute=1">
+                </iframe>
+
             </div>
         </section>
     </div>
@@ -243,22 +247,28 @@
 
 
 
-                <h2 class="h2-sm in">KEY ISSUES</h2>
+                <!-- <h2 class="h2-sm in">KEY ISSUES</h2> -->
+                <h3 class="p-in">Three crucial issues were found that significantly impacted the user experience:</h3>
+
                 <div class="highlight">
-                    <h3 class="insights">1️⃣ Cumbersome flavour selection process</h3>
-                    <p>Users need to manually type their selected flavours in a text box, with no data validation,
+                    <h2 class="h2-sm sub-in">ISSUE #1</h2>
+                    <h3 class="insights">Cumbersome flavour selection process</h3>
+                    <p>Users need to manually type their selected flavours in a text box, with no data
+                        validation,
                         increasing the risk of user error when placing orders.</p>
                 </div>
 
                 <div class="highlight">
-                    <h3 class="insights">2️⃣ Unclear order deadlines</h3>
+                    <h2 class="h2-sm sub-in">ISSUE #2</h2>
+                    <h3 class="insights">Unclear order deadlines</h3>
                     <p>Customers must rely on their memory of the order deadlines from the home page pop up when
                         selecting a
                         delivery date. </p>
                 </div>
 
                 <div class="highlight">
-                    <h3 class="insights">3️⃣ Lack of error prevention when selecting a delivery date</h3>
+                    <h2 class="h2-sm sub-in">ISSUE #3</h2>
+                    <h3 class="insights">Lack of error prevention when selecting a delivery date</h3>
                     <p>Users are able to place orders even after the daily deadline has passed.</p>
                 </div>
 
@@ -356,24 +366,26 @@
             <div>
                 <!-- Methodology -->
                 <h2 class="h2-sm">METHODOLOGY</h2>
-                <p>To supplement our findings from the heuristic evaluation, our team conducted an <a
+                <p class="add-pad">To supplement our findings from the heuristic evaluation, our team conducted an <a
                         href="https://www.surveymonkey.ca/r/W26YBRQ" target="_blank">online customer survey</a> to
                     gather qualitative feedback on the online ordering process from Bonus Bakery’s existing customers.
                 </p>
 
-                <p>Participants were recruited through Bonus Bakery’s Instagram and
+                <!-- <p>Participants were recruited through Bonus Bakery’s Instagram and
                     Facebook pages, and the survey included a screening question to ensure only participants who had
-                    previously
-                    purchased goods from Bonus Bakery could complete the survey. The survey
+                    previously purchased goods from Bonus Bakery could complete the survey. The survey
                     reached a total of 113 people, of which 49 were existing customers who fully completed the
                     questionnaire.
-                </p>
+                </p> -->
 
 
                 <!-- Key Insights -->
-                <h2 class="h2-sm in">KEY INSIGHTS</h2>
+                <!-- <h2 class="h2-sm in">KEY INSIGHTS</h2> -->
+
+                <h3 class="p-in">49 respondents were recruited through Bonus Bakery's Instagram and Facebook pages.</h3>
 
                 <div class="highlight">
+                    <h2 class="h2-sm sub-in">SURVEY INSIGHT #1</h2>
                     <h3 class="insights">60% of respondents suggested improvements to the
                         flavour selection process</h3>
                     <p>"Selecting flavours for the cookies can be slightly tedious as you need to
@@ -382,6 +394,7 @@
                 </div>
 
                 <div class="highlight">
+                    <h2 class="h2-sm sub-in">SURVEY INSIGHT #2</h2>
                     <h3 class="insights">50% of respondents were either indifferent towards or did not like the
                         pop-up presentation of the order deadline information</h3>
                     <p>"When looking on the site, I couldn’t find the order deadlines stated anywhere
@@ -406,37 +419,44 @@
                     current and one prospective customer.
                 </p>
 
-                <p>Participants were given three tasks and were asked to describe their
+                <p class="add-pad">Participants were given three tasks and were asked to describe their
                     thoughts out loud as they completed them. Each task required participants to identify a product that
                     fulfilled the needs of a given scenario and to go through the ordering process until they reached
                     the checkout page.</p>
 
                 <!-- Affinity Diagramming -->
+                <h3 class="p-in">Our team then conducted affinity diagramming to organize the qualitative data
+                    collected, with four common issues emerging.</h3>
+                <!-- 
                 <h2 class="h2-sm in">AFFINITY DIAGRAMMING</h2>
-                <p>Following the studies, our team conducted affinity diagramming to organize the qualitative data
-                    collected during the study,
-                    with four common issues emerging.
-                </p>
+                <p>Our team then conducted affinity diagramming to organize the qualitative data
+                    collected, with four common issues emerging.
+                </p> -->
+
                 <div>
-                    <a href="img/bonus-bakery/affinity-existing.png" target="_blank" class="pop-up-link"><img
+                    <img src="img/bonus-bakery/affinity-existing.png" width="2584" height="1660"
+                        alt="Affinity diagram for the existing website usability study">
+
+                    <!-- <a href="img/bonus-bakery/affinity-existing.png" target="_blank" class="pop-up-link"><img
                             class="static-img comparison" src="img/bonus-bakery/affinity-existing.png" width="2584"
-                            height="1660" alt="Affinity diagram for the existing website usability study"></a>
+                            height="1660" alt="Affinity diagram for the existing website usability study"></a> -->
+
                     <!-- <p class="p-cap comp">Affinity diagram for the existing website usability study</p> -->
 
-                    <div class="modal">
+                    <!-- <div class="modal">
                         <span class="close">&times;</span>
                         <img class="pop-up" src="img/bonus-bakery/affinity-existing.png" width="2584" height="1660"
                             alt="Affinity diagram for the existing website usability study">
                         <div class="caption"></div>
-                    </div>
+                    </div> -->
                 </div>
-
-
 
                 <!-- Key Issues -->
                 <h2 class="h2-sm in">KEY ISSUES</h2>
                 <div class="highlight">
-                    <h3 class="insights">1️⃣ Order deadline and delivery information is not consistently available</h3>
+                    <h2 class="h2-sm sub-in">STUDY INSIGHT #1</h2>
+
+                    <h3 class="insights">Order deadline and delivery information is not easily accessible</h3>
                     <p>“I wish that somewhere before choosing the selection, it
                         would tell the amount of business days it would take for it to be ready.” – Participant 2,
                         Prospective Customer</p>
@@ -447,13 +467,17 @@
                 </div>
 
                 <div class="highlight">
-                    <h3 class="insights">2️⃣ Inability to sort products</h3>
+                    <h2 class="h2-sm sub-in">STUDY INSIGHT #2</h2>
+
+                    <h3 class="insights">Inability to sort products</h3>
                     <p>Without the ability to sort or filter items, some participants found the products page to be
                         overwhelming and had difficulty finding the products they needed.</p>
                 </div>
 
                 <div class="highlight">
-                    <h3 class="insights">3️⃣ Lack of allergen and ingredient information</h3>
+                    <h2 class="h2-sm sub-in">STUDY INSIGHT #3</h2>
+
+                    <h3 class="insights">Lack of allergen and ingredient information</h3>
                     <p>The third and most critical concern was the lack of allergen and ingredient information, with
                         participants emphasizing the importance of knowing ingredient information.</p>
 
@@ -462,7 +486,9 @@
                 </div>
 
                 <div class="highlight">
-                    <h3 class="insights">4️⃣ Visual and graphical inconsistencies</h3>
+                    <h2 class="h2-sm sub-in">STUDY INSIGHT #4</h2>
+
+                    <h3 class="insights">Visual and graphical inconsistencies</h3>
                     <p>"I remember seeing the serving size on a different page but I can't find it on this page... I'm
                         not sure how many this cake feeds." - Participant 1, Current Customer</p>
 
@@ -547,13 +573,20 @@
 
                 <!-- Pilot Study -->
                 <h2 class="h2-sm in">PILOT STUDY</h2>
-                <p>With this initial iteration, I ran a pilot study with a peer to collect initial feedback on the
+                <p class="add-pad">With this initial iteration, I ran a pilot study with a peer to collect initial
+                    feedback on the
                     design, spot any prototype bugs, proofread content, and ensure tasks were achievable within a
                     reasonable timeframe. This step allowed me to make refinements to the prototype and study
                     design before engaging real users, valuing and respecting their time during testing. </p>
 
-                <h2 class="h2-sm in">KEY INSIGHTS</h2>
+                <!-- <h2 class="h2-sm in">KEY INSIGHTS</h2> -->
+
+                <h3 class="p-in">Our team then conducted affinity diagramming to organize the qualitative data
+                    collected, with four common issues emerging.</h3>
+
                 <div class="highlight">
+                    <h2 class="h2-sm sub-in">STUDY INSIGHT #1</h2>
+
                     <h3 class="insights">“The order deadlines should be shown across all pages. The new
                         format on the home page has the same problem as the original website - once you navigate
                         elsewhere you forget about the info.”</h3>
@@ -561,7 +594,10 @@
                 </div>
 
                 <div class="highlight">
-                    <h3 class="insights">"Sorting is not really a filter, so I think 'Sort By' and 'Filters' should be two separate
+                    <h2 class="h2-sm sub-in">STUDY INSIGHT #1</h2>
+
+                    <h3 class="insights">"Sorting is not really a filter, so I think 'Sort By' and 'Filters' should be
+                        two separate
                         dropdowns." </h3>
                     <p>– Pilot Study Participant</p>
                 </div>
