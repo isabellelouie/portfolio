@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Font Styles */
@@ -8,13 +9,18 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color: #FFFAFA;
+    /* background-color: #202020; */
 }
 
 h1 {
-    font-weight: 425;
+    /* font-family: "the-seasons", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    font-weight: 400;
     font-size: 2.25rem;
     padding: 2rem 0;
     margin-bottom: 0.5rem;
+    line-height: 2.5rem;
 }
 
 .h1-light {
@@ -33,10 +39,20 @@ h2 {
     /* color: #368069; */
 }
 
+.grey h2 {
+    /* padding-bottom: 2.5rem; */
+    font-weight: 600;
+}
+
 .home h2 {
+    font-weight: 390;
     padding-top: 1rem;
     margin: 0;
-    font-weight: 385;
+    line-height: 1.5rem;
+}
+
+.h2-intro {
+    font-size: 1rem;
 }
 
 .heading {
@@ -74,8 +90,10 @@ h2.h2-md {
 h2.h2-sm {
     font-weight: 500;
     font-size: 0.95rem;
-    padding-top: 0;
-    margin-top: 2.5rem;
+    line-height: 1.25rem;
+    /* padding-top: 0; */
+    /* margin-top: 2.5rem; */
+    padding-bottom: 0;
     color: #959595
 }
 
@@ -99,6 +117,29 @@ h3.p-in {
     margin: 0;
 }
 
+h3.case-name {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    font-weight: 500;
+    margin-top: 0;
+    color: #777777
+}
+
+p {
+    line-height: 1.5rem;
+    /* padding-bottom: 1rem; */
+}
+
 .case-name {
     padding-bottom: 0;
 }
@@ -110,16 +151,6 @@ h3.p-in {
 .insights {
     margin-bottom: 0;
     padding-bottom: 1rem;
-}
-
-h4 {
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-p {
-    line-height: 1.5rem;
-    /* padding-bottom: 1rem; */
 }
 
 .no-pad {
@@ -139,18 +170,34 @@ h2 em {
 
 
 /* Navigation */
+nav.navbar {
+    background-color: #eeeeee;
+    padding: 2rem 2.5rem 3rem;
+}
+
 .navbar {
     width: 100%;
-    padding: 2.5rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     z-index: 10;
     font-size: 0.85rem;
 }
 
 .navbar .logo {
+    font-size: 1.05rem;
+    /* font-family: "the-seasons", sans-serif; */
+
+    border: 0;
     text-align: left;
     display: block;
     float: left;
+}
+
+a.logo:hover,
+a.logo:focus {
+    color: #368069;
+    text-decoration: none;
+    /* transition: all .2s ease-in-out;
+    transform: scale(1.25); */
 }
 
 .navbar .menu {
@@ -177,23 +224,26 @@ h2 em {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.4rem 0.85rem;
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
 
-    border-radius: 75px;
+    /* border-radius: 75px;
     border: solid 1px;
     border-color: #21212150;
-    transition: 0.2s;
+    transition: 0.2s; */
 }
 
-.navbar a:hover,
-.navbar a:focus {
+.menu a:hover,
+.menu a:focus {
     text-decoration: none;
-    background-color: #21212115;
+    color: #368069;
+    /* background-color: #21212115; */
 }
 
 .navbar .active {
     color: #368069;
 }
+
 
 a {
     color: #368069;
@@ -211,15 +261,31 @@ a:focus {
 }
 
 hr {
-    height: 0.25px;
+    /* height: 0.25px; */
     color: #202020;
     /* background-color: #202020; */
-    margin: 3rem 0 3rem;
     /* box-shadow: 0 20px 20px -20px #333; */
     /* margin-left: 7rem;
     margin-right: 7rem; */
+    margin-top: 0;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 1px solid #202020;
+    box-shadow: 0 20px 20px -20px #202020;
 }
 
+hr.midline {
+    margin: 2rem 0;
+    max-width: 2rem;
+}
+
+hr.longline {
+    /* margin: 2rem 0; */
+    margin-top: 0;
+    margin-bottom: 5rem;
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+}
 
 /* Images */
 /* Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
@@ -232,7 +298,11 @@ img {
 
 a:hover img,
 a:focus img {
-    filter: brightness(0.8);
+    /* filter: brightness(0.8); */
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    transform: translateY(-0.5em);
 }
 
 figure {
@@ -257,6 +327,10 @@ figure img {
 .footer {
     margin-top: 5rem;
     margin-bottom: 2rem;
+}
+
+.footer.grey {
+    margin: 0;
 }
 
 .footer p {
@@ -317,6 +391,10 @@ figure img {
 
 .grey {
     background-color: #eeeeee;
+}
+
+.grey.recent {
+    margin-bottom: 0;
 }
 
 .headshot {
@@ -526,6 +604,10 @@ video {
     border-color: #21212150;
 } */
 
+.link-btn {
+    padding-top: 2rem;
+}
+
 .link-btn p {
     font-size: 0.85rem;
 }
@@ -546,83 +628,36 @@ video {
 .link-btn a:hover,
 .link-btn a:focus {
     text-decoration: none;
-    background-color: #21212115;
+    /* background-color: #21212115; */
+    /* box-shadow: 0 0.5em 0.5em -0.4em var(--hover); */
+    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, .1);
+
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    transform: translateY(-0.3em);
+}
+
+.link-btn .primary-btn {
+    background-color: #111111;
+    color: #fff;
+}
+
+.link-btn .primary-btn:hover,
+.link-btn .primary-btn:focus {
+    background-color: #111111;
+    color: #fff;
+    /* box-shadow: 0 0.5em 0.5em 0.4em var(--hover); */
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .1);
+    transform: translateY(-0.3em);
 }
 
 
 
-
-
-/* button a {
-    text-decoration: none;
-    color: #FFF;
-    font-size: 1rem;
-}
-
-button a:hover,
-button a:focus {
-    text-decoration: none;
-    color: #FFF;
-}
-
-.pushable {
-    position: relative;
-    background: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-.shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    background: hsl(0deg 0% 0% / 0.25);
-    transform: translateY(2px);
-}
-
-.edge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    background: #285f4d;
-}
-
-.front {
-    display: block;
-    position: relative;
-    padding: 0.4rem 0.85rem;
-    border-radius: 50px;
-    font-size: 1.25rem;
-    color: white;
-    background: #3e856f;
-    transform: translateY(-4px);
-}
-
-.pushable:hover .front {
-    transform: translateY(-6px);
-}
-
-.pushable:hover .shadow {
-    transform: translateY(3px);
-}
-
-.pushable:active .front {
-    transform: translateY(-2px);
-}
-
-.pushable:active .shadow {
-    transform: translateY(1px);
-}
-
-.pushable:focus:not(:focus-visible) {
-    outline: none;
+/* mark {
+    background-color: #4872a08f;
+    background-color: #3680698f;
+    padding: 0 0.5rem;
 } */
 
 
@@ -647,9 +682,18 @@ a.btn {
     text-decoration: none;
 }
 
+.home-pad {
+    padding-top: 9rem;
+    padding-bottom: 12.5rem;
+}
 
-.front {
+.home-new {
+    margin: 2.5rem 0;
+}
 
+
+
+/* .front {
     display: block;
     padding: 12px 42px;
     border-radius: 12px;
@@ -659,7 +703,7 @@ a.btn {
     transform: translateY(-4px);
     transition:
         transform 600ms cubic-bezier(.3, .7, .4, 1);
-}
+} 
 
 .pushable {
     background: #285f4d;
@@ -682,4 +726,4 @@ a.btn {
 .pushable:active .front {
     transform: translateY(-2px);
     transition: transform 34ms;
-}
+} */
