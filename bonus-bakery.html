@@ -12,6 +12,8 @@
 
     <!-- Javascript -->
     <script src="js/enlarge.js" defer></script>
+    <script src="js/autoplay.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Import Google Font: DM Sans -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans">
@@ -21,21 +23,17 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
         rel="stylesheet">
 
-    <!-- Import Adobe Font: The Seasons -->
-    <link rel="stylesheet" href="https://use.typekit.net/pmi4ozx.css">
-
     <!-- Import Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
-    <title>Isabelle Louie - UX Researcher from Vancouver, B.C.</title>
+    <title>Isabelle Louie - Bonus Bakery</title>
 </head>
 
 <body>
-
-    <!-- Navigation -->
+    <!-- ====================== NAVIGATION ====================== -->
     <nav class="navbar">
         <a href="index.html" class="logo">Isabelle Louie</a>
         <ul class="menu">
@@ -45,7 +43,7 @@
     </nav>
 
 
-    <!-- Hero Image -->
+    <!-- ====================== HERO ====================== -->
     <picture>
         <source media="(min-width:48rem)" srcset="img/bonus-bakery/hero-lg.png">
         <source media="(min-width:26rem)" srcset="img/bonus-bakery/hero-md.png">
@@ -54,19 +52,19 @@
     </picture>
 
 
-    <!-- Case Introduction -->
+    <!-- ====================== INTRODUCTION ====================== -->
     <section class="section case">
         <div>
-            <h1>Bonus Bakery: Website Redesign</h1>
+            <h1>Optimizing Bonus Bakery's online ordering process</h1>
         </div>
 
         <div class="grid case-intro one two">
             <div>
                 <h2 class="h2-sm">CONTEXT</h2>
-                <p>Bonus Bakery is a plant-based bakery in Vancouver, BC. My team and I 
-                    evaluated their website and created an interactive prototype with recommendations to optimize their
-                    online ordering process. This project was completed as part of a senior level design evaluation
-                    course at Simon Fraser University.</p>
+                <p><a href="https://bonusbakery.com/" target="_blank">Bonus Bakery</a> is a plant-based bakery in
+                    Vancouver, BC. My team and I evaluated their website and created an interactive prototype with
+                    recommendations to optimize their online ordering process. This project was completed as part of a
+                    senior level design evaluation course at Simon Fraser University.</p>
 
                 <h2 class="h2-sm">ROLE</h2>
                 <p>As a UX Researcher, I conducted heuristic evaluations, usability testing, and affinity diagramming to
@@ -77,22 +75,19 @@
                     recommendations, including a simplified flavour selection process and a more straightforward
                     checkout page.</p>
 
-                <p> This project was also featured
-                    in the <a
+                <p> This project was also featured in the <a
                         href="https://www.sfu.ca/siat/showcase/fall-2022-project-showcase/explore-the-projects/iat-432-optimizing-the-online-ordering-process-on-the-bonus-bake.html"
-                        target="_blank">SIAT Fall
-                        2022 Showcase</a> and the <a
+                        target="_blank">SIAT Fall 2022 Showcase</a> and the <a
                         href="https://www.sfu.ca/fcat/news/events/fcat-undergraduate-graduate-conference/ugc-2023.html"
-                        target="_blank">2023
-                        FCAT Undergraduate Conference.</a>
+                        target="_blank">2023 FCAT Undergraduate Conference.</a>
                 </p>
             </div>
 
             <div>
-                <div>
+                <!-- <div>
                     <h2 class="h2-sm">CLIENT</h2>
                     <p><a href="https://bonusbakery.com/" target="_blank">Bonus Bakery</a></p>
-                </div>
+                </div> -->
 
                 <div>
                     <h2 class="h2-sm">TEAM</h2>
@@ -113,7 +108,7 @@
     </section>
 
 
-    <!-- Solution Summary -->
+    <!-- ====================== SOLUTION ====================== -->
     <div class="section main grey">
         <section class="grid case-body one none">
 
@@ -123,21 +118,21 @@
                 <h2 class="h2-lg">A seamless online ordering experience, backed by user research.</h2>
             </div>
 
-            <div class="yt-vid">
-                <!-- <video aria-describedby="new-web" width="320" height="240" autoplay="autoplay" loop="loop">
+            <!-- <div class="yt-vid"> -->
+            <div>
+                <video aria-describedby="new-web" width="320" height="240" controls autoplay="autoplay" loop="loop">
                     <source src="vid/prototype_walkthrough.mp4" type="video/mp4">
                     <p id="new-web">Walkthrough of the redesigned Bonus Bakery's website</p>
-                </video> -->
+                </video>
 
-                <iframe width="1920" height="1080" src="https://youtube.com/embed/9DRpqXpFho0?mute=1">
-                </iframe>
-
+                <!-- <iframe width="1920" height="1080" src="https://youtube.com/embed/9DRpqXpFho0?mute=1">
+                </iframe> -->
             </div>
         </section>
     </div>
 
 
-    <!-- Process -->
+    <!-- ====================== PROCESS ====================== -->
     <div class="section case-body">
 
         <div class="grid case-body one none">
@@ -213,7 +208,7 @@
     </div>
 
 
-    <!-- Research -->
+    <!-- ====================== RESEARCH ====================== -->
     <div class="section main grey">
         <div class="grid case-body one none">
             <h2 class="h2-xl">The Research</h2>
@@ -227,11 +222,11 @@
             </div>
 
             <div>
-                <h2 class="h2-sm">METHODOLOGY</h2>
-                <p>Guided by Jakob
-                    Nielsen’s 10 interaction design principles, I conducted a heuristic evaluation of the Bonus Bakery
-                    website, focusing on the process of ordering a single product for delivery and in-store pickup. My
-                    complete heuristic evaluation report can be found <a
+                <p>Guided by <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Jakob Nielsen’s 10
+                        interaction design principles</a>, <mark>I conducted a heuristic evaluation of the
+                        Bonus Bakery website</mark>, focusing on the process of ordering a single product for delivery
+                    and in-store
+                    pickup. My complete heuristic evaluation report can be found <a
                         href="files/HeuristicEvaluation_BonusBakery.pdf" target="_blank">here</a>.</p>
 
                 <!-- <p> For each issue identified, I noted which
@@ -240,37 +235,34 @@
                     therefore a higher priority. These ratings later guided our redesign process as they allowed our
                     team to address critical issues first, given the time constraints of our project.</p> -->
 
-                <video aria-describedby="old-web" width="320" height="240" controls>
+                <video aria-describedby="old-web" width="320" height="240" controls autoplay="autoplay" loop="loop">
                     <source src="vid/existing_walkthrough.mp4" type="video/mp4">
                     <p id="old-web">Walkthrough of the existing Bonus Bakery's website</p>
                 </video>
                 <p class="p-cap">Walkthrough of the existing Bonus Bakery's website</p>
 
 
-
-                <!-- <h2 class="h2-sm in">KEY ISSUES</h2> -->
-                <h3 class="p-in">Three crucial issues were found that significantly impacted the user experience:</h3>
-
+                <!-- Key Insights -->
+                <h3 class="p-in">I found three key issues that significantly impacted the user experience:</h3>
                 <div class="highlight">
                     <h2 class="h2-sm sub-in">ISSUE #1</h2>
-                    <h3 class="insights">Cumbersome flavour selection process</h3>
-                    <p>Users need to manually type their selected flavours in a text box, with no data
-                        validation,
-                        increasing the risk of user error when placing orders.</p>
+                    <h3 class="insights">Order deadlines are not clearly communicated</h3>
+                    <p>Customers must rely on their memory of the order deadlines from the home page pop up when
+                        selecting a delivery date. </p>
                 </div>
 
                 <div class="highlight">
                     <h2 class="h2-sm sub-in">ISSUE #2</h2>
-                    <h3 class="insights">Unclear order deadlines</h3>
-                    <p>Customers must rely on their memory of the order deadlines from the home page pop up when
-                        selecting a
-                        delivery date. </p>
+                    <h3 class="insights">Lack of error prevention when selecting a delivery date</h3>
+                    <p>Users are able to place orders even after the daily deadline has passed, which can lead to late
+                        deliveries or cancellations without the users realizing.</p>
                 </div>
 
                 <div class="highlight">
                     <h2 class="h2-sm sub-in">ISSUE #3</h2>
-                    <h3 class="insights">Lack of error prevention when selecting a delivery date</h3>
-                    <p>Users are able to place orders even after the daily deadline has passed.</p>
+                    <h3 class="insights">Flavour selection process is old-school and overcomplicated</h3>
+                    <p>Users need to manually type their selected flavours in a text box, with no data
+                        validation, increasing the risk of user error when placing orders.</p>
                 </div>
 
                 <!-- <h3>Issue 1: Cumbersome flavour selection process</h3>
@@ -358,7 +350,7 @@
         </section>
 
 
-        <!-- Customer Feedback Survey -->
+        <!-- ====================== CUSTOMER FEEDBACK SURVEY ====================== -->
         <section class="grid case-body one two">
             <div>
                 <h2 class="heading">Customer Survey</h2>
@@ -366,10 +358,10 @@
 
             <div>
                 <!-- Methodology -->
-                <h2 class="h2-sm">METHODOLOGY</h2>
-                <p class="add-pad">To supplement our findings from the heuristic evaluation, our team conducted an <a
-                        href="https://www.surveymonkey.ca/r/W26YBRQ" target="_blank">online customer survey</a> to
-                    gather qualitative feedback on the online ordering process from Bonus Bakery’s existing customers.
+                <p class="add-pad">To supplement our findings from the heuristic evaluation, our team conducted an
+                    online customer survey to gather qualitative feedback on the ordering process from Bonus
+                    Bakery’s existing customers. The survey link can be found <a
+                        href="https://www.surveymonkey.ca/r/W26YBRQ" target="_blank">here</a>.
                 </p>
 
                 <!-- <p>Participants were recruited through Bonus Bakery’s Instagram and
@@ -381,46 +373,44 @@
 
 
                 <!-- Key Insights -->
-                <!-- <h2 class="h2-sm in">KEY INSIGHTS</h2> -->
-
                 <h3 class="p-in">49 respondents were recruited through Bonus Bakery's Instagram and Facebook pages.</h3>
 
                 <div class="highlight">
                     <h2 class="h2-sm sub-in">SURVEY INSIGHT #1</h2>
-                    <h3 class="insights">60% of respondents suggested improvements to the
-                        flavour selection process</h3>
-                    <p>"Selecting flavours for the cookies can be slightly tedious as you need to
-                        type in each flavour you want. A dropdown menu for the number of each flavour you want would be
-                        helpful." - Participant A, Current Customer</p>
+                    <h3 class="insights">50% of respondents were either indifferent towards or did not like the
+                        pop-up presentation of the order deadline information</h3>
+                    <p class="italic">"I couldn’t find the order deadlines stated anywhere except when it first popped
+                        up on the
+                        home screen. People may forget after reading or click without reading and not be able to
+                        find cut off times when they go to place their order." - Participant A, Current
+                        Customer</p>
                 </div>
 
                 <div class="highlight">
                     <h2 class="h2-sm sub-in">SURVEY INSIGHT #2</h2>
-                    <h3 class="insights">50% of respondents were either indifferent towards or did not like the
-                        pop-up presentation of the order deadline information</h3>
-                    <p>"When looking on the site, I couldn’t find the order deadlines stated anywhere
-                        except when it first popped up on the home screen. People may forget after reading or click
-                        without reading and not be able to find cut off times when they go to place their order." -
-                        Participant B, Current Customer</p>
+                    <h3 class="insights">60% of respondents suggested improvements to the
+                        flavour selection process</h3>
+                    <p class="italic">"Selecting flavours for the cookies can be slightly tedious as you need to
+                        type in each flavour you want. A dropdown menu for the number of each flavour you want could
+                        be helpful." - Participant B, Current Customer</p>
                 </div>
+
         </section>
 
 
-        <!-- Usability Testing -->
-        <section class="grid case-body one two">
+        <!-- ====================== USABILITY TESTING ====================== -->
+        <section class="grid case-body last one two">
             <div>
-                <h2 class="heading">Usability Testing</h2>
+                <h2 class="heading">Usability Testing: Existing Website</h2>
             </div>
 
             <div>
                 <!-- Methodology -->
-                <h2 class="h2-sm">METHODOLOGY</h2>
                 <p>To gain a deeper understanding of customers’ interactions with the website, our team conducted four
-                    think-aloud usability studies on the existing website. I conducted tests with two participants: one
-                    current and one prospective customer.
-                </p>
+                    think-aloud usability studies on the existing website. <mark>I conducted tests with two
+                        participants: one current and one prospective customer.</mark></p>
 
-                <p class="add-pad">Participants were given three tasks and were asked to describe their
+                <p class="add-pad">Participants were given three tasks and asked to describe their
                     thoughts out loud as they completed them. Each task required participants to identify a product that
                     fulfilled the needs of a given scenario and to go through the ordering process until they reached
                     the checkout page.</p>
@@ -428,28 +418,25 @@
                 <!-- Affinity Diagramming -->
                 <h3 class="p-in">Our team then conducted affinity diagramming to organize the qualitative data
                     collected, with four common issues emerging.</h3>
-                <!-- 
-                <h2 class="h2-sm in">AFFINITY DIAGRAMMING</h2>
-                <p>Our team then conducted affinity diagramming to organize the qualitative data
-                    collected, with four common issues emerging.
-                </p> -->
 
-                <div>
-                    <img src="img/bonus-bakery/affinity-existing.png" width="2584" height="1660"
-                        alt="Affinity diagram for the existing website usability study">
+                <div class="view-img">
+                    <!-- <a href="img/bonus-bakery/affinity-existing.png" target="_blank">
+                        <img src="img/bonus-bakery/affinity-existing.png" width="2584" height="1660"
+                            alt="Affinity diagram for the study on the existing website"></a> -->
+                    <!-- <p class="p-cap">Affinity diagram for the study on the existing website</p> -->
 
-                    <!-- <a href="img/bonus-bakery/affinity-existing.png" target="_blank" class="pop-up-link"><img
+
+                    <a href="img/bonus-bakery/affinity-existing.png" target="_blank" class="pop-up-link"><img
                             class="static-img comparison" src="img/bonus-bakery/affinity-existing.png" width="2584"
-                            height="1660" alt="Affinity diagram for the existing website usability study"></a> -->
+                            height="1660" alt="Affinity diagram for the existing website usability study"></a>
+                    <p class="p-cap comp">Affinity diagram for the existing website usability study</p>
 
-                    <!-- <p class="p-cap comp">Affinity diagram for the existing website usability study</p> -->
-
-                    <!-- <div class="modal">
+                    <div class="modal">
                         <span class="close">&times;</span>
                         <img class="pop-up" src="img/bonus-bakery/affinity-existing.png" width="2584" height="1660"
                             alt="Affinity diagram for the existing website usability study">
                         <div class="caption"></div>
-                    </div> -->
+                    </div>
                 </div>
 
                 <!-- Key Issues -->
@@ -457,10 +444,10 @@
                 <div class="highlight">
                     <h2 class="h2-sm sub-in">STUDY INSIGHT #1</h2>
 
-                    <h3 class="insights">Order deadline and delivery information is not easily accessible</h3>
-                    <p>“I wish that somewhere before choosing the selection, it
-                        would tell the amount of business days it would take for it to be ready.” – Participant 2,
-                        Prospective Customer</p>
+                    <h3 class="insights">Order deadline and delivery information is easily forgotten</h3>
+                    <p class="italic">“I wish that somewhere before choosing the selection, it would tell the amount of
+                        business
+                        days it would take for it to be ready.” – Participant 2, Prospective Customer</p>
 
                     <p>Although this information was presented in the initial pop-up on the homepage, the participant
                         had difficulty recalling this information when it came to selecting the delivery day they
@@ -470,31 +457,32 @@
                 <div class="highlight">
                     <h2 class="h2-sm sub-in">STUDY INSIGHT #2</h2>
 
-                    <h3 class="insights">Inability to sort products</h3>
-                    <p>Without the ability to sort or filter items, some participants found the products page to be
-                        overwhelming and had difficulty finding the products they needed.</p>
+                    <h3 class="insights">Ingredient transparency is important for those with allergies</h3>
+                    <!-- <p>The third and most critical concern was the lack of allergen and ingredient information, with
+                        participants emphasizing the importance of knowing ingredient information.</p> -->
+                    <p class="italic">"If I had an allergy, I would either call the bakery to confirm the ingredients or
+                        not
+                        order at all." - Participant 2, Prospective Customer</p>
                 </div>
 
                 <div class="highlight">
                     <h2 class="h2-sm sub-in">STUDY INSIGHT #3</h2>
 
-                    <h3 class="insights">Lack of allergen and ingredient information</h3>
-                    <p>The third and most critical concern was the lack of allergen and ingredient information, with
-                        participants emphasizing the importance of knowing ingredient information.</p>
-
-                    <p>"If I had an allergy, I would either call the bakery to confirm the ingredients or just not
-                        order at all." - Participant 2, Prospective Customer </p>
+                    <h3 class="insights">The inability to sort products creates information overload</h3>
+                    <p>Some participants found the All Products page to be overwhelming and had difficulty finding the
+                        products they needed.</p>
                 </div>
 
                 <div class="highlight">
                     <h2 class="h2-sm sub-in">STUDY INSIGHT #4</h2>
 
-                    <h3 class="insights">Visual and graphical inconsistencies</h3>
-                    <p>"I remember seeing the serving size on a different page but I can't find it on this page... I'm
-                        not sure how many this cake feeds." - Participant 1, Current Customer</p>
+                    <h3 class="insights">Inconsistent information is displayed across pages</h3>
+                    <p class="italic">"I remember seeing the serving size on a different page but I can't find it on
+                        this page...
+                        I'm not sure how many this cake feeds." - Participant 1, Current Customer</p>
 
                     <p>While the participant was correct in remembering that some pages provided serving size
-                        information, this is not consistently shared across all product pages.</p>
+                        information, this is not consistently shared across all the product pages.</p>
                 </div>
                 <!-- </div> -->
 
@@ -511,24 +499,24 @@
     </div>
 
 
-    <!-- Prototype -->
+    <!-- ====================== PROTOTYPE ====================== -->
     <div class="section case-body">
 
         <section class="grid case-body one two">
             <div>
-                <h2 class="heading">Prototype</h2>
+                <h2 class="heading">Initial Prototype</h2>
             </div>
 
             <div>
-                <p>Based on the findings from the heuristic evaluation, customer survey and usability studies, our team
+                <p>Based on the findings from the heuristic evaluation, customer survey, and usability studies, our team
                     created the first iteration of an interactive prototype with recommended changes. I was
                     responsible for designing interactions, writing microcopy, and adding functionality to user flows.
                 </p>
 
-                <p>Key changes included the addition of static cards on the homepage with delivery and deadline
+                <!-- <p>Key changes included the addition of static cards on the homepage with delivery and deadline
                     information, product filters, revamped product pages with more photos and information about
                     ingredients and serving sizes, and the relocation of the delivery/pickup selection to the checkout
-                    page. </p>
+                    page. </p> -->
 
                 <!-- <video width="320" height="240" controls>
                     <source src="vid/prototype_walkthrough.mp4.mp4" type="video/mp4">
@@ -540,67 +528,189 @@
                     and deadline information.
                 </p> -->
 
-                <div class="grid img">
-                    <div>
-                        <a href="img/bonus-bakery/home-old.png" target="_blank" class="pop-up-link"><img
-                                class="static-img comparison" src="img/bonus-bakery/home-old.png" width="2584"
-                                height="1660" alt="Bonus Bakery's previous home page pop-up"></a>
-                        <p class="p-cap comp">Bonus Bakery's previous home page pop-up</p>
+                <!-- ====================== CHANGE #1 ====================== -->
+                <h2 class="h2-sm in">KEY CHANGE #1</h2>
+                <div class=key-changes>
+                    <h3 class="p-in">Static cards on the homepage with delivery and deadline information</h3>
+                    <div class="grid img view-img">
+                        <div>
+                            <a href="img/bonus-bakery/home-old.png" target="_blank" class="pop-up-link"><img
+                                    class="static-img comparison" src="img/bonus-bakery/home-old.png" width="2584"
+                                    height="1660" alt="Bonus Bakery's previous home page pop-up"></a>
+                            <p class="p-cap comp">Bonus Bakery's previous home page pop-up</p>
 
-                        <div class="modal">
-                            <span class="close">&times;</span>
-                            <img class="pop-up" src="img/bonus-bakery/home-old.png" width="2584" height="1660"
-                                alt="Bonus Bakery's previous home page pop-up">
-                            <div class="caption"></div>
+                            <div class="modal">
+                                <span class="close">&times;</span>
+                                <img class="pop-up" src="img/bonus-bakery/home-old.png" width="2584" height="1660"
+                                    alt="Bonus Bakery's previous home page pop-up">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="img/bonus-bakery/home-new.png" target="_blank" class="pop-up-link"><img
+                                    class="static-img comparison" src="img/bonus-bakery/home-new.png" width="2584"
+                                    height="1660" alt="Bonus Bakery's redesigned home page"></a>
+                            <p class="p-cap comp">Bonus Bakery's redesigned home page</p>
+
+                            <div class="modal">
+                                <span class="close">&times;</span>
+                                <img class="pop-up" src="img/bonus-bakery/home-new.png" width="2584" height="1660"
+                                    alt="Bonus Bakery's redesigned home page">
+                                <div class="caption"></div>
+                            </div>
                         </div>
                     </div>
+                </div>
 
+                <!-- ====================== CHANGE #2 ====================== -->
+                <h2 class="h2-sm in">KEY CHANGE #2</h2>
+                <div class="key-changes">
+                    <h3 class="p-in">Product filters on the All Products page</h3>
+                    <div class="grid img view-img">
+                        <div>
+                            <a href="img/bonus-bakery/home-old.png" target="_blank" class="pop-up-link"><img
+                                    class="static-img comparison" src="img/bonus-bakery/home-old.png" width="2584"
+                                    height="1660" alt="Bonus Bakery's previous home page pop-up"></a>
+                            <p class="p-cap comp">Bonus Bakery's previous home page pop-up</p>
 
-                    <div>
-                        <a href="img/bonus-bakery/home-new.png" target="_blank" class="pop-up-link"><img
-                                class="static-img comparison" src="img/bonus-bakery/home-new.png" width="2584"
-                                height="1660" alt="Bonus Bakery's redesigned home page"></a>
-                        <p class="p-cap comp">Bonus Bakery's redesigned home page</p>
+                            <div class="modal">
+                                <span class="close">&times;</span>
+                                <img class="pop-up" src="img/bonus-bakery/home-old.png" width="2584" height="1660"
+                                    alt="Bonus Bakery's previous home page pop-up">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
 
-                        <div class="modal">
-                            <span class="close">&times;</span>
-                            <img class="pop-up" src="img/bonus-bakery/home-new.png" width="2584" height="1660"
-                                alt="Bonus Bakery's redesigned home page">
-                            <div class="caption"></div>
+                        <div>
+                            <a href="img/bonus-bakery/home-new.png" target="_blank" class="pop-up-link"><img
+                                    class="static-img comparison" src="img/bonus-bakery/home-new.png" width="2584"
+                                    height="1660" alt="Bonus Bakery's redesigned home page"></a>
+                            <p class="p-cap comp">Bonus Bakery's redesigned home page</p>
+
+                            <div class="modal">
+                                <span class="close">&times;</span>
+                                <img class="pop-up" src="img/bonus-bakery/home-new.png" width="2584" height="1660"
+                                    alt="Bonus Bakery's redesigned home page">
+                                <div class="caption"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
-                <!-- Pilot Study -->
-                <h2 class="h2-sm in">PILOT STUDY</h2>
-                <p class="add-pad">With this initial iteration, I ran a pilot study with a peer to collect initial
-                    feedback on the
-                    design, spot any prototype bugs, proofread content, and ensure tasks were achievable within a
-                    reasonable timeframe. This step allowed me to make refinements to the prototype and study
-                    design before engaging real users, valuing and respecting their time during testing. </p>
+
+                <!-- ====================== CHANGE #3 ====================== -->
+                <h2 class="h2-sm in">KEY CHANGE #3</h2>
+                <div class="key-changes">
+                    <h3 class="p-in">Revamped product pages with additional photos and information</h3>
+                    <div class="grid img view-img">
+                        <div>
+                            <a href="img/bonus-bakery/home-old.png" target="_blank" class="pop-up-link"><img
+                                    class="static-img comparison" src="img/bonus-bakery/home-old.png" width="2584"
+                                    height="1660" alt="Bonus Bakery's previous home page pop-up"></a>
+                            <p class="p-cap comp">Bonus Bakery's previous home page pop-up</p>
+
+                            <div class="modal">
+                                <span class="close">&times;</span>
+                                <img class="pop-up" src="img/bonus-bakery/home-old.png" width="2584" height="1660"
+                                    alt="Bonus Bakery's previous home page pop-up">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="img/bonus-bakery/home-new.png" target="_blank" class="pop-up-link"><img
+                                    class="static-img comparison" src="img/bonus-bakery/home-new.png" width="2584"
+                                    height="1660" alt="Bonus Bakery's redesigned home page"></a>
+                            <p class="p-cap comp">Bonus Bakery's redesigned home page</p>
+
+                            <div class="modal">
+                                <span class="close">&times;</span>
+                                <img class="pop-up" src="img/bonus-bakery/home-new.png" width="2584" height="1660"
+                                    alt="Bonus Bakery's redesigned home page">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ====================== CHANGE #4 ====================== -->
+                <h2 class="h2-sm in">KEY CHANGE #4</h2>
+                <div class="key-changes">
+                    <h3 class="p-in">Delivery selection moved to checkout page to reduce redundancy</h3>
+
+                    <div class="grid img view-img">
+                        <div>
+                            <a href="img/bonus-bakery/home-old.png" target="_blank" class="pop-up-link"><img
+                                    class="static-img comparison" src="img/bonus-bakery/home-old.png" width="2584"
+                                    height="1660" alt="Bonus Bakery's previous home page pop-up"></a>
+                            <p class="p-cap comp">Bonus Bakery's previous home page pop-up</p>
+
+                            <div class="modal">
+                                <span class="close">&times;</span>
+                                <img class="pop-up" src="img/bonus-bakery/home-old.png" width="2584" height="1660"
+                                    alt="Bonus Bakery's previous home page pop-up">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="img/bonus-bakery/home-new.png" target="_blank" class="pop-up-link"><img
+                                    class="static-img comparison" src="img/bonus-bakery/home-new.png" width="2584"
+                                    height="1660" alt="Bonus Bakery's redesigned home page"></a>
+                            <p class="p-cap comp">Bonus Bakery's redesigned home page</p>
+
+                            <div class="modal">
+                                <span class="close">&times;</span>
+                                <img class="pop-up" src="img/bonus-bakery/home-new.png" width="2584" height="1660"
+                                    alt="Bonus Bakery's redesigned home page">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ====================== PILOT STUDY ====================== -->
+    <div class="section case-body">
+
+        <section class="grid case-body one two">
+            <div>
+                <h2 class="heading">Pilot Study</h2>
+            </div>
+
+            <div>
+                <p class="add-pad">With this initial iteration, <mark>I ran a pilot study</mark> with a peer to collect
+                    feedback
+                    on the design, spot any prototype bugs, proofread content, and ensure tasks were
+                    achievable within a reasonable timeframe. This step allowed me to make refinements to the prototype
+                    and study design before engaging real users to respect their time during testing. </p>
 
                 <!-- <h2 class="h2-sm in">KEY INSIGHTS</h2> -->
 
-                <h3 class="p-in">Our team then conducted affinity diagramming to organize the qualitative data
-                    collected, with four common issues emerging.</h3>
+                <!-- <h3 class="p-in">Our team then conducted affinity diagramming to organize the qualitative data
+                    collected, with four common issues emerging.</h3> -->
 
-                <div class="highlight">
-                    <h2 class="h2-sm sub-in">STUDY INSIGHT #1</h2>
+                <div class="highlight shaded">
+                    <h2 class="h2-sm sub-in">SUGGESTION #1</h2>
 
-                    <h3 class="insights">“The order deadlines should be shown across all pages. The new
+                    <h3 class="insights">Adding an order deadline banner across all pages</h3>
+                    <p class="italic">“The order deadlines should be shown across all pages. The new
                         format on the home page has the same problem as the original website - once you navigate
-                        elsewhere you forget about the info.”</h3>
-                    <p>– Pilot Study Participant</p>
+                        elsewhere you forget about the info.” – Pilot Study Participant</p>
                 </div>
 
-                <div class="highlight">
-                    <h2 class="h2-sm sub-in">STUDY INSIGHT #1</h2>
+                <div class="highlight shaded">
+                    <h2 class="h2-sm sub-in">SUGGESTION #2</h2>
 
-                    <h3 class="insights">"Sorting is not really a filter, so I think 'Sort By' and 'Filters' should be
-                        two separate
-                        dropdowns." </h3>
-                    <p>– Pilot Study Participant</p>
+                    <h3 class="insights">Separate 'Sort By' and 'Filter' dropdowns</h3>
+                    <p class="italic">"Sorting is not really a filter category." – Pilot Study Participant</p>
                 </div>
 
 
@@ -640,13 +750,183 @@
                         </div>
                     </div>
                 </div> -->
+            </div>
+        </section>
+    </div>
 
+    <!-- ====================== USABILITY TESTING ====================== -->
+    <div class="section main grey">
+        <section class="grid case-body last one two grey-block-2">
+            <div>
+                <h2 class="heading">Usability Testing: Prototype</h2>
+            </div>
+
+            <div>
+                <!-- Methodology -->
+                <p class="add-pad">Using the refined prototype, our team conducted eight think-aloud usability studies
+                    with current and
+                    prospective customers, with a process similar to the first round of studies conducted on the
+                    existing website. <mark>I led four sessions: two with current customers and two with prospective
+                        customers.</mark></p>
+
+                <!-- <p class="add-pad">Participants were given three tasks and asked to describe their
+                    thoughts out loud as they completed them. Each task required participants to identify a product that
+                    fulfilled the needs of a given scenario and to go through the ordering process until they reached
+                    the checkout page.</p> -->
+
+                <!-- Affinity Diagramming -->
+                <h3 class="p-in">Affinity diagramming revealed strong support for our recommendations</h3>
+                <!-- <p>Once again, our team conducted affinity diagramming to review the qualitative data collected during
+                    the study, with a majority of comments supporting our recommendations.</p> -->
+
+                <p> In particular, participants liked the addition
+                    of allergen and ingredient information, improved filter and sorting options, and simplified delivery
+                    and pickup selection process. </p>
+
+                <div class="view-img">
+                    <a href="img/bonus-bakery/affinity-prototype.png" target="_blank" class="pop-up-link"><img
+                            class="static-img comparison" src="img/bonus-bakery/affinity-prototype.png" width="2584"
+                            height="1660" alt="Affinity diagram for the existing website usability study"></a>
+                    <p class="p-cap">Affinity diagram for the prototype usability study</p>
+
+                    <div class="modal">
+                        <span class="close">&times;</span>
+                        <img class="pop-up" src="img/bonus-bakery/affinity-prototype.png" width="2584" height="1660"
+                            alt="Affinity diagram for the existing website usability study">
+                        <div class="caption"></div>
+                    </div>
+                </div>
+
+                <!-- Highlights -->
+                <h3 class="p-in">Many participants also found the new process and design to be very clear and
+                    straightforward.</h3>
+                <div class="highlight">
+                    <h2 class="h2-sm sub-in">PARTICIPANT #6:</h2>
+                    <!-- <h3 class="insights">"I found the interface very straightforward. The images reflected the items and
+                        made it easier to choose what i wanted, and the filter button make it more efficient if I was
+                        looking for a particular item."</h3> -->
+                    <p class="italic">"I found the interface very straightforward. The images reflected the items and
+                        made it easier to choose what i wanted, and the filter button make it more efficient if I was
+                        looking for a particular item."</p>
+                </div>
+
+                <div class="highlight">
+                    <h2 class="h2-sm sub-in">PARTICIPANT #5:</h2>
+                    <!-- <h3 class="insights">"It was easy to do all the steps for an order quickly."</h3> -->
+                    <p class="italic">"It was easy to do all the steps for an order quickly."</p>
+                </div>
+
+                <p class="p-cap"></p>
+
+                <!-- Suggestions -->
+                <h3 class="p-in">One common suggestion was to provide more detailed order review.</h3>
+                <div class="highlight">
+                    <h2 class="h2-sm sub-in">PARTICIPANT #6:</h2>
+                    <!-- <h3 class="insights">More detailed order review prior to checkout</h3> -->
+                    <p class="italic">"I would like to be able to see the size of the cake, special requests, or
+                        flavours of cookies when reviewing my order to confirm that I’ve selected the correct option"
+                    </p>
+                </div>
+
+                <div class="highlight">
+                    <h2 class="h2-sm sub-in">PARTICIPANT #4:</h2>
+                    <!-- <h3 class="insights">Consistently provide 'nut-free' and 'gluten-free' indicators</h3> -->
+                    <p class="italic">"In the review cart at the end it may be valuable to indicate if you have chosen a
+                        customization such as gluten-free"</p>
+                </div>
 
             </div>
         </section>
 
+        <section class="grid case-body last one two grey-block-2">
+            <div>
+                <h2 class="heading">Prototype Revisions</h2>
+            </div>
 
-        <!-- Embedded Final Design -->
+            <div>
+                <!-- Methodology -->
+                <p class="add-pad">Based on the feedback collected during the usability study with the prototype, our
+                    team made a few minor changes to refine and finalize the design. </p>
+
+
+                <!-- ====================== CHANGE #1 ====================== -->
+                <h2 class="h2-sm in">KEY CHANGE #1</h2>
+                <div class=key-changes>
+                    <h3 class="p-in">Static cards on the homepage with delivery and deadline information</h3>
+                    <div class="grid img view-img">
+                        <div>
+                            <a href="img/bonus-bakery/home-old.png" target="_blank" class="pop-up-link"><img
+                                    class="static-img comparison" src="img/bonus-bakery/home-old.png" width="2584"
+                                    height="1660" alt="Bonus Bakery's previous home page pop-up"></a>
+                            <p class="p-cap comp">Bonus Bakery's previous home page pop-up</p>
+
+                            <div class="modal">
+                                <span class="close">&times;</span>
+                                <img class="pop-up" src="img/bonus-bakery/home-old.png" width="2584" height="1660"
+                                    alt="Bonus Bakery's previous home page pop-up">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="img/bonus-bakery/home-new.png" target="_blank" class="pop-up-link"><img
+                                    class="static-img comparison" src="img/bonus-bakery/home-new.png" width="2584"
+                                    height="1660" alt="Bonus Bakery's redesigned home page"></a>
+                            <p class="p-cap comp">Bonus Bakery's redesigned home page</p>
+
+                            <div class="modal">
+                                <span class="close">&times;</span>
+                                <img class="pop-up" src="img/bonus-bakery/home-new.png" width="2584" height="1660"
+                                    alt="Bonus Bakery's redesigned home page">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ====================== CHANGE #2 ====================== -->
+                <h2 class="h2-sm in">KEY CHANGE #2</h2>
+                <div class="key-changes">
+                    <h3 class="p-in">Product filters on the All Products page</h3>
+                    <div class="grid img view-img">
+                        <div>
+                            <a href="img/bonus-bakery/home-old.png" target="_blank" class="pop-up-link"><img
+                                    class="static-img comparison" src="img/bonus-bakery/home-old.png" width="2584"
+                                    height="1660" alt="Bonus Bakery's previous home page pop-up"></a>
+                            <p class="p-cap comp">Bonus Bakery's previous home page pop-up</p>
+
+                            <div class="modal">
+                                <span class="close">&times;</span>
+                                <img class="pop-up" src="img/bonus-bakery/home-old.png" width="2584" height="1660"
+                                    alt="Bonus Bakery's previous home page pop-up">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="img/bonus-bakery/home-new.png" target="_blank" class="pop-up-link"><img
+                                    class="static-img comparison" src="img/bonus-bakery/home-new.png" width="2584"
+                                    height="1660" alt="Bonus Bakery's redesigned home page"></a>
+                            <p class="p-cap comp">Bonus Bakery's redesigned home page</p>
+
+                            <div class="modal">
+                                <span class="close">&times;</span>
+                                <img class="pop-up" src="img/bonus-bakery/home-new.png" width="2584" height="1660"
+                                    alt="Bonus Bakery's redesigned home page">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- ====================== FINAL DESIGN ====================== -->
+    <div class="section case-body">
         <section class="grid case-body one two">
             <div class="final-design">
                 <h2>Experience the Final Design</h2>
@@ -671,14 +951,16 @@
 
             <div>
                 <p>
-                    This project provided an excellent opportunity to explore a variety of UX research methodologies and
+                    This project provided an excellent opportunity to explore a variety of UX research methodologies
+                    and
                     develop my skills in designing and conducting usability studies. Analyzing, synthesizing, and
                     integrating research findings into data-driven design solutions was another key aspect of my
                     learning experience.
                 </p>
 
                 <p>
-                    One significant takeaway was the critical role of participant selection in ensuring the reliability
+                    One significant takeaway was the critical role of participant selection in ensuring the
+                    reliability
                     of insights. Implementing a rigorous participant screening process and balancing participant
                     demographics across user groups enhanced the credibility of our research outcomes.
                 </p>
@@ -696,7 +978,7 @@
 
     <!-- Footer -->
     <div class="footer">
-        <p>© Isabelle Louie 2023</p>
+        <p>© Isabelle Louie 2024</p>
     </div>
 
 </body>

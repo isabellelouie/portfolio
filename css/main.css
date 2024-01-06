@@ -31,6 +31,10 @@ h1 {
     margin-bottom: 0.75rem;
 }
 
+.case h1 {
+    font-weight: 450;
+}
+
 h2 {
     font-weight: 400;
     font-size: 1.75rem;
@@ -39,9 +43,9 @@ h2 {
     /* color: #368069; */
 }
 
-.grey h2 {
+.grey.recent h2 {
     /* padding-bottom: 2.5rem; */
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .home h2 {
@@ -56,7 +60,11 @@ h2 {
 }
 
 .heading {
-    color: #368069;
+    /* color: #368069; */
+    /* color: #4873a0; */
+    color: #23634f;
+    font-weight: 400;
+    line-height: 1.25;
 }
 
 .two h2 {
@@ -65,6 +73,10 @@ h2 {
 
 .case-body.two {
     margin-bottom: 2.5rem;
+}
+
+.grey .case-body.last {
+    margin-bottom: 0;
 }
 
 h2.h2-xl {
@@ -76,6 +88,7 @@ h2.h2-xl {
 }
 
 h2.h2-lg {
+    font-weight: 400;
     margin-top: 0;
 }
 
@@ -136,12 +149,16 @@ h4 {
 h5 {
     font-weight: 500;
     margin-top: 0;
-    color: #777777
+    color: #959595;
 }
 
 p {
     line-height: 1.5rem;
     /* padding-bottom: 1rem; */
+}
+
+.italic {
+    font-style: italic;
 }
 
 .case-name {
@@ -297,7 +314,7 @@ hr.longline {
 img {
     height: auto;
     max-width: 100%;
-    filter: drop-shadow(0 0 0.2rem #d2d2d2);
+    /* filter: drop-shadow(0 0 0.2rem #d2d2d2); */
     box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, .1);
     border-radius: 8px;
 }
@@ -308,12 +325,22 @@ picture img {
 
 a:hover img,
 a:focus img {
-    filter: brightness(0.95);
-    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, .1);
+    filter: brightness(0.975);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1);
     transition-duration: .3s;
     transition-property: transform;
     transition-timing-function: ease-out;
-    transform: translateY(-0.5em);
+    transform: translateY(0.3em);
+}
+
+.view-img a:hover img,
+.view-img a:focus img {
+    filter: brightness(1);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1);
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    transform: translateY(0.3em);
 }
 
 figure {
@@ -407,6 +434,10 @@ figure img {
 
 .grey.recent {
     margin-bottom: 0;
+}
+
+.grey-block-2 {
+    padding-top: 2.5rem;
 }
 
 .headshot {
@@ -509,7 +540,7 @@ p.sub-p-img {
 .p-cap {
     /* text-align: center; */
     font-size: 0.75rem;
-    margin-top: 0;
+    padding-top: 0.5rem;
     margin-bottom: 3rem;
 }
 
@@ -524,6 +555,14 @@ p.sub-p-img {
     border: solid 1px;
     border-color: #21212150;
     filter: drop-shadow(0 0 0.2rem #d2d2d2);
+}
+
+.highlight.shaded {
+    background-color: #fffafabd;
+}
+
+.key-changes {
+    padding-bottom: 1.5rem;
 }
 
 .quote {
@@ -712,8 +751,6 @@ a.btn {
 .home-new a:focus {
     color: #368069;
 }
-
-
 
 
 /* .front {

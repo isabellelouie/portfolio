@@ -30,10 +30,15 @@
     p {
         font-size: 0.85rem;
     }
-
-    .navbar {
-        padding: 2.5rem 1rem;
+    
+    nav.navbar {
+        background-color: #eeeeee;
+        padding: 2rem 1rem 3rem;
     }
+
+    /* .navbar {
+        padding: 2.5rem 1rem;
+    } */
 
     .section {
         margin: 0 1rem;
@@ -135,6 +140,14 @@
         margin: 5rem 0;
         padding: 2.5rem 1rem;
     }
+
+    .home-new {
+        margin: 5rem 0;
+    }
+
+    .home-new h4 {
+        padding-top: 0;
+    }
 }
 
 @media (min-width: 26.5625rem) {
@@ -230,9 +243,13 @@
         padding: 0;
     }
 
-    .navbar {
-        padding: 2.5rem;
+    nav.navbar {
+        padding: 2rem 2.5rem 3rem;
     }
+
+    /* .navbar {
+        padding: 2.5rem;
+    } */
 
     .section {
         margin: 2rem 2.5rem;
@@ -250,6 +267,14 @@
         grid-template-rows: auto;
         grid-auto-flow: row;
         gap: 3rem;
+    }
+
+    .home-new {
+        margin: 2.5rem 0;
+    }
+
+    .home-new h4 {
+        padding-top: 2rem;
     }
 
     .grid.bio.two {
