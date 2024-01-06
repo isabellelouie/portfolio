@@ -228,8 +228,9 @@ a.logo:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 0.85rem;
-    padding-right: 0.85rem;
+
+    /* padding-left: 0.85rem; */
+    /* padding-right: 0.85rem;  */
 
     /* border-radius: 75px;
     border: solid 1px;
@@ -297,6 +298,7 @@ img {
     height: auto;
     max-width: 100%;
     filter: drop-shadow(0 0 0.2rem #d2d2d2);
+    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, .1);
     border-radius: 8px;
 }
 
@@ -306,7 +308,8 @@ picture img {
 
 a:hover img,
 a:focus img {
-    /* filter: brightness(0.8); */
+    filter: brightness(0.95);
+    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, .1);
     transition-duration: .3s;
     transition-property: transform;
     transition-timing-function: ease-out;
@@ -698,6 +701,16 @@ a.btn {
 
 .home-new {
     margin: 2.5rem 0;
+}
+
+.home-new a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.home-new a:hover,
+.home-new a:focus {
+    color: #368069;
 }
 
 
