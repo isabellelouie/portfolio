@@ -61,8 +61,8 @@ h2 {
 
 .heading {
     /* color: #368069; */
-    /* color: #4873a0; */
-    color: #23634f;
+    color: #31567f;
+    /* color: #2f5184; */
     font-weight: 400;
     line-height: 1.25;
 }
@@ -705,11 +705,10 @@ video {
 
 
 
-/* mark {
-    background-color: #4872a08f;
-    background-color: #3680698f;
-    padding: 0 0.5rem;
-} */
+mark {
+    background-color: #bfdad6;
+    /* padding: 0 0.5rem;  */
+}
 
 
 
