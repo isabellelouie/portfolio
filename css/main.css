@@ -12,6 +12,10 @@ body {
     /* background-color: #202020; */
 }
 
+.hero {
+    box-shadow: none;
+}
+
 h1 {
     /* font-family: "the-seasons", sans-serif;
     font-weight: 400;
@@ -33,6 +37,7 @@ h1 {
 
 .case h1 {
     font-weight: 450;
+    margin-top: 5rem;
 }
 
 h2 {
@@ -67,12 +72,21 @@ h2 {
     line-height: 1.25;
 }
 
-.two h2 {
+.two h2, .three h2 {
     margin-top: 0;
 }
 
 .case-body.two {
     margin-bottom: 2.5rem;
+}
+
+.case-body.four h3 {
+    font-size: 1.05rem;
+    padding-bottom: 0;
+}
+
+.case-body.four p {
+    font-size: 0.9rem;
 }
 
 .grey .case-body.last {
@@ -126,8 +140,11 @@ h3 {
 }
 
 h3.p-in {
-    /* margin-top: 3rem; */
     margin: 0;
+}
+
+h3.p-in.first {
+    padding-top: 3rem;
 }
 
 h3.case-name {
@@ -179,6 +196,14 @@ p {
     margin: 0;
 }
 
+.case-body .link-btn {
+    padding-top: 0;
+}
+
+.link-btn .no-pad {
+    padding-bottom: 0;
+}
+
 h1 em {
     color: #368069;
     font-style: normal;
@@ -192,7 +217,7 @@ h2 em {
 
 /* Navigation */
 nav.navbar {
-    background-color: #eeeeee;
+    background-color: #eeeeee90;
     padding: 2rem 2.5rem 3rem;
 }
 
@@ -200,11 +225,11 @@ nav.navbar {
     width: 100%;
     /* margin-bottom: 2rem; */
     z-index: 10;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }
 
 .navbar .logo {
-    font-size: 1.05rem;
+    font-size: 1rem;
     /* font-family: "the-seasons", sans-serif; */
 
     border: 0;
@@ -268,13 +293,17 @@ a.logo:focus {
 
 
 a {
-    color: #368069;
-    text-decoration: none;
+    /* color: #368069; */
+    color: #111111;
+    /* text-decoration: none; */
+    text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    text-decoration: none;
+    color: #368069;
 }
 
 
@@ -290,6 +319,7 @@ hr {
     /* margin-left: 7rem;
     margin-right: 7rem; */
     margin-top: 0;
+    margin-bottom: 0;
     border-top: 0;
     border-left: 0;
     border-bottom: 1px solid #202020;
@@ -315,7 +345,7 @@ img {
     height: auto;
     max-width: 100%;
     /* filter: drop-shadow(0 0 0.2rem #d2d2d2); */
-    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, .1);
+    box-shadow: 2.5px 2.5px 8px 2.5px rgba(0, 0, 0, .1);
     border-radius: 8px;
 }
 
@@ -326,7 +356,7 @@ picture img {
 a:hover img,
 a:focus img {
     filter: brightness(0.975);
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0.5px 0.5px 5px 1px rgba(0, 0, 0, .1);
     transition-duration: .3s;
     transition-property: transform;
     transition-timing-function: ease-out;
@@ -340,7 +370,7 @@ a:focus img {
     transition-duration: .3s;
     transition-property: transform;
     transition-timing-function: ease-out;
-    transform: translateY(0.3em);
+    transform: translateY(0.25em);
 }
 
 figure {
@@ -383,7 +413,7 @@ figure img {
 }
 
 .biography h1 {
-    padding-bottom: 0;
+    padding-bottom: 0.75rem;
 }
 
 .biography h2 {
@@ -403,6 +433,10 @@ figure img {
 
 .biography a p {
     margin: 0rem;
+}
+
+.biography .link-btn {
+    padding-top: 0;
 }
 
 .intro-item {
@@ -429,10 +463,15 @@ figure img {
 }
 
 .grey {
-    background-color: #eeeeee;
+    background-color: #eeeeee80;
 }
 
 .grey.recent {
+    margin-bottom: 0;
+}
+
+.grey.end {
+    padding-top: 5rem;
     margin-bottom: 0;
 }
 
@@ -561,6 +600,7 @@ p.sub-p-img {
     background-color: #fffafabd;
 }
 
+
 .key-changes {
     padding-bottom: 1.5rem;
 }
@@ -670,6 +710,8 @@ video {
     display: inline-flex;
     padding: 0.25rem 0.85rem;
 
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, .1);
+
     border-radius: 75px;
     border: solid 1px;
     border-color: #21212150;
@@ -679,28 +721,30 @@ video {
 .link-btn a:hover,
 .link-btn a:focus {
     text-decoration: none;
-    /* background-color: #21212115; */
-    /* box-shadow: 0 0.5em 0.5em -0.4em var(--hover); */
-    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, .1);
+    box-shadow: 0.5px 0.5px 5px 1px rgba(0, 0, 0, .1);
+    /* box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, .1); */
+
+    background-color: #eeeaea75;
 
     transition-duration: .3s;
     transition-property: transform;
     transition-timing-function: ease-out;
-    transform: translateY(-0.3em);
+    transform: translateY(0.2em);
 }
 
 .link-btn .primary-btn {
     background-color: #111111;
     color: #fff;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, .1);
 }
 
 .link-btn .primary-btn:hover,
 .link-btn .primary-btn:focus {
     background-color: #111111;
     color: #fff;
-    /* box-shadow: 0 0.5em 0.5em 0.4em var(--hover); */
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .1);
-    transform: translateY(-0.3em);
+    box-shadow: none;
+    box-shadow: 0.5px 0.5px 5px 1px rgba(0, 0, 0, .1);
+    transform: translateY(0.2em);
 }
 
 
@@ -750,39 +794,3 @@ a.btn {
 .home-new a:focus {
     color: #368069;
 }
-
-
-/* .front {
-    display: block;
-    padding: 12px 42px;
-    border-radius: 12px;
-    font-size: 1.25rem;
-    background: #368069;
-    color: white;
-    transform: translateY(-4px);
-    transition:
-        transform 600ms cubic-bezier(.3, .7, .4, 1);
-} 
-
-.pushable {
-    background: #285f4d;
-    border: none;
-    border-radius: 12px;
-    padding: 0;
-    cursor: pointer;
-}
-
-.pushable:focus:not(:focus-visible) {
-    outline: none;
-}
-
-.pushable:hover .front {
-    transform: translateY(-6px);
-    transition:
-        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
-}
-
-.pushable:active .front {
-    transform: translateY(-2px);
-    transition: transform 34ms;
-} */
